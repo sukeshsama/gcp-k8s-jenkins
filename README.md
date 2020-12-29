@@ -31,7 +31,7 @@
     Kubernetes Namespace: jenkins  
     Credentials: - none  
     Jenkins URL	: http://jenkins-jenkins-ui:8080/  
-    Jenkins tunnel	jenkins-jenkins-agents-connector:50000  
+    Jenkins tunnel:	jenkins-jenkins-agents-connector:50000  
     Jenkins URL and Jenkins tunnel are basically service & port numbers created during the Jenkins setup.  
     you can check them by running below commands  
     $ kubectl get svc -n jenkins
