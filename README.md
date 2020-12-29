@@ -4,7 +4,7 @@
 * Connet to your account https://console.cloud.google.com/
 * From menu Select K8's Enginer and choose all defaults to setup 1 master 2 node cluster  
   
-* Once cluster is ready From left menu, select Applications and go to google market and install Jenkins( choose new namespace and provide namespace as Jenkins)  
+* Once cluster is ready, from left menu, select Applications and go to google market and install Jenkins( choose new namespace and provide namespace as 'jenkins')  
 * Once Jenkins is available, connect to cluster and switch to jenkins namespace using below command  
  $ kubectl config set-context --current --namespace=jenkins  
 * Connect to jenkins pod using below commands  
@@ -21,8 +21,8 @@
  1. Go to https://console.cloud.google.com/ -> Applications and click on Jenkin HTTP address  
  2. use Initial Password retrieved from Jenkins pod  
  3. you can create your admin account, if this step is ignored, you need to connect to jenkins pod every time to retrieve password, unless you save it somewhere.  
- 4. Go to manage Jenkins and Install Kubernetes plugin from plugins section  
- 5. configure kubernetes cloud  
+ 4. Go to Manage Jenkins and Install Kubernetes plugin from Manage plugins section  
+ 5. Configure kubernetes cloud(https://your-jenkinsurl-or-ip/configureClouds/  
 
     Kubernetes URL: https://kubernetes.default  
     Kubernetes server certificate key:  
