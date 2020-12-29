@@ -22,7 +22,8 @@
  2. use Initial Password retrieved from Jenkins pod  
  3. you can create your admin account, if this step is ignored, you need to connect to jenkins pod every time to retrieve password, unless you save it somewhere.  
  4. Go to Manage Jenkins and Install Kubernetes plugin from Manage plugins section  
- 5. Configure kubernetes cloud(https://your-jenkinsurl-or-ip/configureClouds/  
+ 
+ # Configure kubernetes cloud(https://your-jenkinsurl-or-ip/configureClouds/  
 
     Kubernetes URL: https://kubernetes.default  
     Kubernetes server certificate key:  
@@ -31,20 +32,17 @@
     Credentials: - none  
     Jenkins URL	: http://jenkins-jenkins-ui:8080/  
     Jenkins tunnel	jenkins-jenkins-agents-connector:50000  
-    
     Jenkins URL and Jenkins tunnel are basically service & port numbers created during the Jenkins setup.  
     you can check them by running below commands  
-    
     $ kubectl get svc -n jenkins
     
-    Pod Templates:  
+  # Configure Pod and container template
+    * Pod Templates:  
     Name: test (you can choose anyname)  
     Labels: test (you can choose anyname)  
-    Containers:  
+    * Containers:  
     Name: jnlp (leave jnlp, dont ask me why :))  
     Docker image: sukeshrsama/jnlp-test-agent:latest (dummy agent, to test Dynamic test agent)  
     Working directory: /home/jenkins/agent  
     Service Account: jenkins  
     
- 
- 
