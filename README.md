@@ -14,7 +14,7 @@
  $ jenkins@jenkins-jenkins-0:/$ cat /var/jenkins_home/secrets/initialAdminPassword  
  
  * This step is must to create Dynamic kubernetes agents from Jenkins master  
- $ kubectl create sa jenkins -n jenkins
+ $ kubectl create sa jenkins -n jenkins  
  $ kubectl create -f role-bindings.yml -n jenkins (role-bindings.yml is available in this repo)
  
  * Connect to Jenkins from browser  
