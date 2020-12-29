@@ -23,8 +23,9 @@
  3. you can create your admin account, if this step is ignored, you need to connect to jenkins pod every time to retrieve password, unless you save it somewhere.  
  4. Go to Manage Jenkins and Install Kubernetes plugin from Manage plugins section  
  
- # Configure kubernetes cloud(https://your-jenkinsurl-or-ip/configureClouds/  
-
+ # Configure kubernetes cloud  
+ 
+    Go to Jenkins https://your-jenkinsurl-or-ip/configureClouds/  
     Kubernetes URL: https://kubernetes.default  
     Kubernetes server certificate key:  
     Disable https certificate check: off  
