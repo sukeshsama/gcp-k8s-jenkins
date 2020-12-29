@@ -27,7 +27,7 @@
     Kubernetes URL: https://kubernetes.default  
     Kubernetes server certificate key:  
     Disable https certificate check: off  
-    Kubernetes Namespace: Jenkins  
+    Kubernetes Namespace: jenkins  
     Credentials: - none  
     Jenkins URL	: http://jenkins-jenkins-ui:8080/  
     Jenkins tunnel	jenkins-jenkins-agents-connector:50000  
