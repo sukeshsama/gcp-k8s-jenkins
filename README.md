@@ -13,7 +13,7 @@
  Run below command to get initial admin password for Jenkins  
  $ jenkins@jenkins-jenkins-0:/$ cat /var/jenkins_home/secrets/initialAdminPassword  
  
- * This step is must to create Dynamic kubernetes agents from Jenkins master 
+ * This step is must to create Dynamic kubernetes agents from Jenkins master  
  $ kubectl create sa jenkins -n jenkins
  $ kubectl create -f role-bindings.yml -n jenkins (role-bindings.yml is available in this repo)
  
