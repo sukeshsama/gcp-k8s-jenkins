@@ -43,7 +43,7 @@
     Containers:  
     Name: jnlp (leave jnlp, dont ask me why :))  
     Docker image: sukeshrsama/jnlp-test-agent:latest (dummy agent, to test Dynamic test agent)  
-    Working directory: /home/jenkins/agent
+    Working directory: /home/jenkins/agent  
     Service Account: jenkins  
     
  
